@@ -40,8 +40,8 @@ export default class Validator {
     const informer = document.querySelector('.validator__informer');
     if (!informer) return;
     if (!text) {
-      informer.classList.remove('_green', '_red');
-      informer.textContent = '';
+      this.informer.classList.remove('_green', '_red');
+      this.informer.textContent = '';
       return;
     }
     informer.textContent = text;
@@ -49,11 +49,11 @@ export default class Validator {
   }
 
   removeClassDisableFromIcons() {
-    const icons = document.querySelectorAll('.validator__card');
-    for (const icon of icons) {
+    this.icons = document.querySelectorAll('.validator__card');
+    for (const icon of this.icons) {
       icon.classList.remove('_disable');
     }
-    return icons;
+    return this.icons;
   }
 
   highlightPaymentSystem(paymentSystem) {

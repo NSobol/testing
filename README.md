@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/hiuwm10yx8c399mi?svg=true)](https://ci.appveyor.com/project/NSobol/testing)
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
@@ -43,6 +45,7 @@
 ### Puppeteer
 
 Подключите Puppeteer и проверьте взаимодействие для двух различных вариантов:
+
 1. Ввод валидного номера карты
 1. Ввод невалидного номера краты
 

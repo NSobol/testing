@@ -21,8 +21,9 @@ export function checkForMatchPayment(number) {
   if (firstNumber === 4) return 'Visa';
   if (firstNumber === 2) return 'Mir';
   const firstTwoNumbers = Number(number.slice(0, 2));
-  if (numbersForValidation[firstTwoNumbers] !== undefined)
+  if (numbersForValidation[firstTwoNumbers] !== undefined) {
     return numbersForValidation[firstTwoNumbers];
+  }
   return false;
 }
 
